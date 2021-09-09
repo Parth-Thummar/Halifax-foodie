@@ -1,0 +1,56 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-halifaxfoodie-dev-233713-authRole",
+      "UnauthRoleArn": "arn:aws:iam::364818328573:role/amplify-halifaxfoodie-dev-233713-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::364818328573:role/amplify-halifaxfoodie-dev-233713-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-halifaxfoodie-dev-233713-deployment",
+      "UnauthRoleName": "amplify-halifaxfoodie-dev-233713-unauthRole",
+      "StackName": "amplify-halifaxfoodie-dev-233713",
+      "StackId": "arn:aws:cloudformation:us-east-1:364818328573:stack/amplify-halifaxfoodie-dev-233713/7c957390-ea4e-11eb-9792-12197adfd2f9",
+      "AmplifyAppId": "d1yrayhobi1tpt"
+    }
+  },
+  "auth": {
+    "cognito063830e7": {
+      "service": "Cognito",
+      "serviceType": "managed",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-halifaxfoodie-dev-233713-deployment/amplify-cfn-templates/auth/cognito063830e7-cloudformation-template.yml",
+        "logicalId": "authcognito063830e7"
+      },
+      "lastPushTimeStamp": "2021-07-21T18:17:39.486Z",
+      "output": {
+        "IdentityPoolId": "us-east-1:658fdcd9-79ac-4069-9797-1724a761acf3",
+        "IdentityPoolName": "halifaxfoodie_identitypool_063830e7__dev"
+      },
+      "lastPushDirHash": "gRZt03RNa7PVs+zDZOWSwqKPNN0="
+    }
+  },
+  "interactions": {
+    "lexbot": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "lastPackageTimeStamp": "2021-07-21T18:16:17.740Z",
+      "distZipFilename": "lexbot-5473543752686d504d2f-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-halifaxfoodie-dev-233713-deployment",
+        "s3Key": "amplify-builds/lexbot-5473543752686d504d2f-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-halifaxfoodie-dev-233713-deployment/amplify-cfn-templates/interactions/lexbot-cloudformation-template.json",
+        "logicalId": "interactionslexbot"
+      },
+      "lastPushTimeStamp": "2021-07-21T18:17:39.486Z",
+      "output": {
+        "FunctionArn": "arn:aws:lambda:us-east-1:364818328573:function:halifaxfoodie_cfnlambda_5360918e-dev",
+        "Region": "us-east-1",
+        "BotName": "FoodApp_bot_dev"
+      },
+      "lastPushDirHash": "ZSI/0FlyppUMppA6/mn3PTv619w="
+    }
+  }
+}

@@ -1,0 +1,15 @@
+/*
+References:
+1. https://www.npmjs.com/package/react-chatbot-kit
+2. https://fredrikoseberg.github.io/react-chatbot-kit-docs/
+*/
+
+
+.CustomerCare {
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

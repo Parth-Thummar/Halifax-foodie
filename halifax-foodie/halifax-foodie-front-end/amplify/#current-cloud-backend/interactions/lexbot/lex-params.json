@@ -1,0 +1,48 @@
+{
+    "resourceName": "lexbot",
+    "botName": "FoodApp_bot",
+    "intents": [
+        {
+            "slots": [
+                {
+                    "name": "OrderId",
+                    "type": "AMAZON.NUMBER",
+                    "prompt": "Can you please mention the Order id?",
+                    "required": true,
+                    "customType": false
+                },
+                {
+                    "name": "RestaurantName",
+                    "type": "RestaurantName",
+                    "prompt": "Can you please mention Restaurant name?",
+                    "required": true,
+                    "customType": true
+                },
+                {
+                    "name": "Time",
+                    "type": "AMAZON.TIME",
+                    "prompt": "Can you please tell us the time of order?",
+                    "required": true,
+                    "customType": false
+                }
+            ],
+            "utterances": [
+                "track the order",
+                "Track Order"
+            ],
+            "intentName": "TrackOrder",
+            "newSlotTypes": [
+                {
+                    "slotType": "RestaurantName",
+                    "slotTypeDescription": "Name Of Restaurant",
+                    "slotValues": [
+                        "Dominos"
+                    ]
+                }
+            ]
+        }
+    ],
+    "outputVoice": "Matthew",
+    "sessionTimeout": 5,
+    "coppa": false
+}
